@@ -1,0 +1,104 @@
+body {
+    background-color: #121212; 
+    color: #ffffff; 
+    font-family: 'Arial', sans-serif; 
+    margin: 0; 
+}
+
+.wrapper {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px; 
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center; 
+    font-size: 2.5em; 
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+nav {
+    margin-bottom: 20px; 
+}
+
+nav ul {
+    display: flex; 
+    justify-content: center; 
+    list-style-type: none; 
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 25px; 
+}
+
+nav ul li a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline; 
+}
+
+/* Стили для контейнера игроков */
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+/* Стили для каждого игрока */
+.player {
+    background-color: #1e1e1e; 
+    border-radius: 8px; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    flex-basis: calc(33.333% - 20px); 
+}
+
+.player:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); 
+}
+
+/* Стили для изображений игроков */
+.player img {
+    width: 100px; 
+    height: auto; 
+    border-radius: 8px; /
+}
+
+#playerInfo {
+    background-color: #1e1e1e; 
+    border-radius: 4px; 
+    padding: 10px; 
+    margin-top: 20px;
+}
+
+footer{
+    text-align: center;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; 
+        margin-bottom: 10px; 
+        text-align: center; 
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - TableTennisHub</title>
+    <link rel="stylesheet" href="/dist/css/gallery.css">
+    <link rel="icon" href="/dist/images/Table tennis.png" type="image/x-icon"> 
+</head>
+<body>
+    <div class="wrapper"> 
+        <h1><a href="main.html">TableTennisHub</a></h1>   
+        <nav>
+            <ul class="games">
+                <li><a href="games.html">Партии</a></li>
+                <li><a href="page.html">Новости</a></li>
+                <li><a href="history.html">История настольного тенниса</a></li>
+                <li><a href="theory.html">Теория</a></li>
+                <li><a href="players.html">Игроки</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="about_us.html">О нас</a></li>
+            </ul>
+            <h2>Галерея настольных теннисистов</h2>  
+        </nav>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="/dist/images/1.webp" alt="Игрок 1" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="/dist/images/2.jpg" alt="Игрок 2" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="/dist/images/3.jpeg" alt="Игрок 3" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="/dist/images/4.jpg" alt="Игрок 4" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="/dist/images/5.jpg" alt="Игрок 5" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="/dist/images/6.jpg" alt="Игрок 6" class="gallery-image">
+            </div>
+        </div>
+
+        <!-- Модальное окно для увеличенного просмотра -->
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+
+    </div>
+    <footer>
+        <p>&copy; 2024 TableTennisHub. Все права защищены.</p>
+    </footer>
+    <script src="gallery.js"></script>
+</body>
+</html>

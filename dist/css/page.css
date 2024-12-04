@@ -1,0 +1,81 @@
+body {
+    display: fixed;
+    background-color: black;
+    color: white; 
+    margin: 0; 
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    margin-bottom: 0px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#playerSection {
+    text-align: center; 
+}
+
+#player {    
+    height: 300px; 
+    opacity: 0; 
+    transform: translateY(200px); 
+    transition: all 2s ease; 
+}
+
+#player.animate {
+    display: block; 
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+#games {
+    position: relative;
+    background: black;
+    z-index: 20;
+}
+
+footer{
+    text-align: center;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; 
+        margin-bottom: 10px; 
+        text-align: center; 
+    }
+}

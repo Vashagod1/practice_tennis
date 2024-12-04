@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - TableTennisHub</title>
+    <link rel="stylesheet" href="/dist/css/main_style.css"> 
+    <link rel="icon" href="/dist/images/Table tennis.png" type="image/x-icon"> 
+</head>
+
+<body>
+    
+    <div class="wrapper"> 
+        <h1>TableTennisHub</h1>  
+
+    <section id="playerSection">
+        <img id="player" src="/dist/images/sticker.webp" alt="Игрок" class="history-image">
+    </section>
+
+    <script>
+        window.onload = function() {
+            const player = document.getElementById('player');
+            // Показать игрока с анимацией
+            player.classList.add('animate');
+
+            const imageContainer = document.getElementById('playerSection');
+    
+            setTimeout(() => {
+                const image = document.getElementById('player');
+                image.style.opacity = '1'; 
+                image.style.transform = 'translateY(0)'; 
+            }, 10);
+        };
+    </script>
+    <header>
+        <nav>
+            <ul class="games">
+                <li><a href="games.html">Партии</a></li>
+                <li><a href="page.html">Новости</a></li>
+                <li><a href="history.html">История настольного тенниса</a></li>
+                <li><a href="theory.html">Теория</a></li>
+                <li><a href="players.html">Игроки</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="about_us.html">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+</body>
+</html>
